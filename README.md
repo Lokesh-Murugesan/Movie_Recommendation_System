@@ -1,17 +1,23 @@
-# movie-recommendation-system
-CS6550 - Introduction to Information Retrieval project
+# Movie_Recommendation_System
+    A movie recommention system using information retrieval techniques.
 
-Term: Fall, 2020
+Installation
+------------
+This project requires Python and the following Python libraries installed:
 
-A movie recommention system using information retrieval techniques.
+* pandas
+* numpy
+* sklearn
 
-Authors
-* [Abishek Krishnan](https://github.com/github4ak)
-* [Sai Vamshi Dobbali](https://github.com/saivamshidobbali)
+You will also need to have software installed to run and execute a Jupyter Notebook
+
+If you do not have Python installed yet, it is highly recommended that you install the Anaconda distribution of Python, which already has the above packages and more included.
+
+
 
 Overview
 --------
-This project contains i) Statistical Filtering and ii) Content based filtering to recommend top movies.
+This project contains i) Statistical Filtering , ii) Content based filtering to recommend top movies and iii) Model Fitting.
 
 Setup steps
 -----------
@@ -71,6 +77,48 @@ Movies similar to The Shawshank Redemption are:
 434           The Longest Yard
 42                 Toy Story 3
 Name: title, dtype: object
+```
+For our model fitting, we got the classification report and the accuracy score for the Random Forest and the Naive Bayes models as,
+```
+Classification Report Of Random Forest:
+               precision    recall  f1-score   support
+
+           0       0.95      0.98      0.97      1139
+           1       0.05      0.02      0.02        62
+
+    accuracy                           0.93      1201
+   macro avg       0.50      0.50      0.49      1201
+weighted avg       0.90      0.93      0.92      1201
+
+
+ Model Accuracy for Random Forest: 
+ 	 93.255620316403
+
+ Training Accuracy: 
+ 	 93.75347029428096
+
+ Testing Accuracy: 
+ 	 93.255620316403
+
+ Classification Report Of Naive Bayes:
+               precision    recall  f1-score   support
+
+           0       0.95      1.00      0.97      1363
+           1       0.00      0.00      0.00        78
+
+    accuracy                           0.95      1441
+   macro avg       0.47      0.50      0.49      1441
+weighted avg       0.89      0.95      0.92      1441
+
+
+ Model Accuracy for Naive Bayes:
+ 	 94.58709229701596
+
+ Training Accuracy:
+ 	 93.48602022605593
+
+ Testing Accuracy:
+ 	 94.58709229701596
 ```
 
 References
